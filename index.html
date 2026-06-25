@@ -493,53 +493,6 @@
       font-weight: 300;
     }
 
-    /* ─── Skills ─────────────────────────────────────────────── */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px;
-    }
-
-    .skill-box {
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      border-radius: 18px;
-      padding: 26px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition: border-color .25s, transform .25s;
-    }
-
-    .skill-box:hover {
-      border-color: rgba(255,255,255,0.2);
-      transform: translateY(-2px);
-    }
-
-    .skill-box h3 {
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      margin-bottom: 18px;
-    }
-
-    .tags { display: flex; flex-wrap: wrap; gap: 7px; }
-
-    .tag {
-      background: rgba(255,255,255,0.055);
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: 100px;
-      padding: 5px 13px;
-      font-size: 12.5px;
-      transition: all .2s;
-    }
-
-    .tag:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: rgba(255,255,255,0.18);
-    }
-
     /* ─── Projects ───────────────────────────────────────────── */
     .projects-grid {
       display: grid;
@@ -588,6 +541,53 @@
       border-radius: 100px;
       padding: 3px 10px;
       letter-spacing: 0.03em;
+    }
+    
+    /* ─── Skills ─────────────────────────────────────────────── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .skill-box {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 18px;
+      padding: 26px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s;
+    }
+
+    .skill-box:hover {
+      border-color: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+    .skill-box h3 {
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 18px;
+    }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+
+    .tag {
+      background: rgba(255,255,255,0.055);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 100px;
+      padding: 5px 13px;
+      font-size: 12.5px;
+      transition: all .2s;
+    }
+
+    .tag:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.18);
     }
 
     /* ─── Contact — X-Ray Effect ─────────────────────────────── */
@@ -745,6 +745,7 @@
     <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="#education">Education</a>
+    <a href="#skills">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Get in Touch</a>
   </nav>
@@ -810,6 +811,7 @@
       <a href="#about"      class="pill-active">About Me</a>
       <a href="#education"               >Education</a>
       <a href="#experience"              >Experience</a>
+      <a href="#projects"                >Projects</a>
       <a href="#skills"                  >Skills</a>
     </div>
 
