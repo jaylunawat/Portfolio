@@ -760,7 +760,7 @@
         
           <img src="IMG_3278-removebg-preview.png" alt="Jay Lunawat" />
         
-        <span style="font-size:64px; opacity:.25;">◉</span>
+        <span style="font-size:64px; opacity:.25;"></span>
       </div>
       <div class="age-badge" id="ageBadge">🎂 [age]y</div>
     </div>
@@ -769,7 +769,7 @@
 
     <p class="hero-sub">
       Tinkerer at heart. Designing &amp; capturing the world through my lens<br>
-      Second-year undergrad at IIT Bombay.
+      Second-year undergrad at IIT Bombay
     </p>
 
     <div class="hero-socials">
@@ -823,7 +823,7 @@
   <section id="about" class="wrap">
     <p class="sec-label">About Me</p>
     <div class="about-para" id="aboutPara">
-      I'm a second-year undergraduate at IIT Bombay, diving into tech, sports, and everything in between. When I'm not crushing college deadlines or pulling all-nighters, I'm tinkering over that one random idea you get on a Tuesday morning.<br>
+      I'm a second-year undergraduate at IIT Bombay, diving into tech, sports, and everything in between. When I'm not crushing college deadlines or pulling all-nighters, I'm tinkering over that one random idea you get on a Tuesday morning.<br><br>
       Outside the acads, you'll find me playing cricket, running, watching F1, or figuring out the meta on some multiplayer game.
     </div>
 
@@ -837,8 +837,8 @@
         <div class="stat-desc">Ideas Brewing</div>
       </div>
       <div class="stat-box fu d3">
-        <div class="stat-num">Indore</div>
-        <div class="stat-desc">Madhya Pradesh, India</div>
+        <div class="stat-num">Sudoku</div>
+        <div class="stat-desc">idk why</div>
       </div>
     </div>
   </section>
@@ -855,7 +855,7 @@
         <span class="edu-year">2024 – 2028(I hope :D)</span>
       </div>
       <div class="edu-deg">B.Tech — Civil Engineering</div>
-      <div class="edu-note">Mumbai, Maharashtra · Third Year Undergraduate</div>
+      <div class="edu-note">Mumbai, Maharashtra</div>
     </div>
 
     <div class="edu-card fu d1">
@@ -1258,17 +1258,17 @@
       return precise ? yrs.toFixed(9) : Math.floor(yrs);
     }
 
-    badge.textContent = `🤙 ${ageYears()}y`;
+    badge.textContent = `🎂 ${ageYears()}y`;
 
     let ticker;
     badge.addEventListener('mouseenter', () => {
       ticker = setInterval(() => {
-        badge.textContent = `🤙 ${ageYears(true)}y`;
+        badge.textContent = `🎂 ${ageYears(true)}y`;
       }, 50);
     });
     badge.addEventListener('mouseleave', () => {
       clearInterval(ticker);
-      badge.textContent = `🤙 ${ageYears()}y`;
+      badge.textContent = `🎂 ${ageYears()}y`;
     });
 
     /* ── About Scroll Highlight ─────────────────────────────── */
